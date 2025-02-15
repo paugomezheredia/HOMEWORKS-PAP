@@ -1,0 +1,8 @@
+logs/
+results/
+training_logs.csv
+
+.venv/
+env/
+
+.ipynb_checkpoints/

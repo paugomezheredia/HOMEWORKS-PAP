@@ -1,0 +1,4 @@
+gymnasium==1.0.0
+numpy==2.2.3
+ipython==8.12.0
+matplotlib==3.8.2
