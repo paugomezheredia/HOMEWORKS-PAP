@@ -21,8 +21,7 @@ def train():
     while not done:
         # Render the current state as an image
         img = env.render()
-        display.display(display.Image(img))
-        display.clear_output(wait=True)  # Clear the previous image
+
         time.sleep(1)  # Add a delay to make the game visible
 
         # Sample a random action (0 or 1)
@@ -39,9 +38,13 @@ def train():
 
     print(f"Episode finished with total reward: {reward}")
 
+    plt.imshow(img)
+    plt.axis('off')
+    plt.show()
+
     # Close the environment
     env.close()
 
 # Run the TRAIN function
-if __name__ == "__train__":
+if __name__ == "__main__":
     train()
